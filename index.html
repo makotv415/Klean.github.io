@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>パスワード保護ページ</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">この先はパスワードが必要です</h1>
+    <p class="lead">パスワードを入力してください。</p>
+
+    <form id="pwForm" autocomplete="off" onsubmit="return false;">
+      <input id="pw" type="password" placeholder="パスワードを入力" required />
+
+      <div class="actions">
+        <button id="submitBtn" class="btn" type="submit">送信</button>
+        <div id="msg" class="message" aria-live="polite"></div>
+      </div>
+    </form>
+
+    <div class="hint">※テスト</div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="index1.js"></script>
+</body>
+</html>
